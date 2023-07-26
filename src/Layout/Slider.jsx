@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const Slider = ({ menuState }) => {
   return (
@@ -24,7 +25,7 @@ const Slider = ({ menuState }) => {
         <li className="mt-2 flex items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
           <img className="mr-2" src="../../public/33308.png" alt="" />
           {
-            menuState && <span>Customer</span>
+            menuState && <Link to='/customers'><span>Customer</span></Link>
           }        </li>
         <li className="mt-2 flex items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
           <img className="mr-2" src="../../public/3633274.png" alt="" />
