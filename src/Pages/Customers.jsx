@@ -17,12 +17,12 @@ const Customers = () => {
     }
 
     return (
-        <div>
+        <div className=' overflow-scroll bg-white p-5 m-5'>
             <table class="table-auto">
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th className=''>Name</th>
                         <th>User Name</th>
                         <th>Email</th>
                         <th>Phone</th>
@@ -40,8 +40,8 @@ const Customers = () => {
                             <td>{name}</td>
                             <td>{username}</td>
                             <td>{email}</td>
-                            <td>{address?.city}</td>
                             <td>{phone}</td>
+                            <td>{address?.city}</td>
                             <td>{company.name}</td>
                             <td>{website}</td>
                             <td onClick={()=> {deleteUser(id)}}> <MdDelete className='mx-auto text-red-500 cursor-pointer' size={30}></MdDelete> </td>
