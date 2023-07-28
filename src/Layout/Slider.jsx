@@ -4,7 +4,7 @@ const Slider = ({ menuState }) => {
   return (
     <div className={` ${menuState ? "w-[20%] duration-300" : "duration-300"} hidden lg:block bg-white h-screen rounded-md text-secondary lg:ml-2`}>
       <ul className="flex flex-col h-full">
-        <li className={`font-semibold px-3 mt-4 ${!menuState && "hidden"}`}><img src="../../public/Group 19.png" alt="" /></li>
+        <li className={`font-semibold px-3 ${!menuState && "hidden"}`}><img src="../../public/Group 19.png" alt="" /></li>
 
         <li>
           <div className={`flex items-center mt-10 px-3 ${!menuState && "hidden"}`}>

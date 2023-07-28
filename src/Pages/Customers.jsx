@@ -3,6 +3,7 @@ import { useGetCustomersQuery } from '../app/features/api/apiSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import {MdDelete} from "react-icons/md"
 import { removeUser, setUsers } from '../app/features/customers/customersSlice';
+import { toast } from 'react-hot-toast';
 
 const Customers = () => {
 
@@ -14,37 +15,38 @@ const Customers = () => {
 
     const deleteUser = (id) => {
         dispatch(removeUser(id))
+        toast.success("User Deleted Successfully")
     }
 
     return (
-        <div className=' overflow-scroll bg-white p-5 m-5'>
-            <table class="table-auto">
+        <div className=' bg-white p-5 m-5 rounded-xl overflow-scroll'>
+            <table class="table-auto ">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th className=''>Name</th>
-                        <th>User Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Address</th>
-                        <th>Company</th>
-                        <th>Website</th>
-                        <th>Action</th>
+                        <th  className='p-2 border'>Id</th>
+                        <th  className='p-2 border'>Name</th>
+                        <th  className='p-2 border'>User Name</th>
+                        <th  className='p-2 border'>Email</th>
+                        <th  className='p-2 border'>Phone</th>
+                        <th  className='p-2 border'>Address</th>
+                        <th  className='p-2 border'>Company</th>
+                        <th  className='p-2 border'>Website</th>
+                        <th  className='p-2 border'>Action</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     {
-                        users?.map(({ id, name, email, address, username, phone, website, company }) => <tr key={id}>
-                            <td>{id}</td>
-                            <td>{name}</td>
-                            <td>{username}</td>
-                            <td>{email}</td>
-                            <td>{phone}</td>
-                            <td>{address?.city}</td>
-                            <td>{company.name}</td>
-                            <td>{website}</td>
-                            <td onClick={()=> {deleteUser(id)}}> <MdDelete className='mx-auto text-red-500 cursor-pointer' size={30}></MdDelete> </td>
+                        users?.map(({ id, name, email, address, username, phone, website, company }, i) => <tr key={id} className={`${id % 2 === 1 ? "bg-white" : "bg-green-50"}`}>
+                            <td className="p-2 border">{id}</td>
+                            <td className="p-2 border">{name}</td>
+                            <td className="p-2 border">{username}</td>
+                            <td className="p-2 border">{email}</td>
+                            <td className="p-2 border">{phone}</td>
+                            <td className="p-2 border">{address?.city}</td>
+                            <td className="p-2 border">{company.name}</td>
+                            <td className="p-2 border">{website}</td>
+                            <td className="p-2 border" onClick={()=> {deleteUser(id)}}> <MdDelete className='mx-auto text-red-500 cursor-pointer' size={30}></MdDelete> </td>
                         </tr>)
                     }
                 </tbody>

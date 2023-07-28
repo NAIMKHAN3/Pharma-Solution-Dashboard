@@ -16,7 +16,7 @@ const Deshboard = () => {
   }
   return (
     <div>
-      <div className="flex items-center  mx-auto">
+      <div className="flex items-center">
         
           <Slider menuState={menuState} />
           
@@ -24,7 +24,7 @@ const Deshboard = () => {
           
           
         
-        <div className={`w-full duration-300 rounded-lg bg-[#ECF0F3] min-h-screen`}>
+        <div className={`w-full duration-300 bg-[#ECF0F3] min-h-screen`}>
          <Header handleClick={handleClick}/>
           <Outlet />
         </div>
