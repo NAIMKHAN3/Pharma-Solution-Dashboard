@@ -16,10 +16,10 @@ const Header = ({handleClick}) => {
         </div>
         <div className="flex items-center">
           <div className="border-r-2 mr-3 pr-5">
-            <img src="../../public/notification.png" alt="" />
+            <img src="./notification.png" alt="" />
           </div>
           <div className="flex items-center justify-between">
-            <img src="../../public/9230.png" alt="" />
+            <img src="./9230.png" alt="" />
             <h1 className="ml-3 font-semibold hidden lg:block">Bradly Robin </h1>
             <BiSolidDownArrow className="ml-1 text-secondary hidden lg:block" size={12} />
           </div>
