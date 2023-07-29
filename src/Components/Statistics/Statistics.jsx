@@ -5,6 +5,7 @@ import expireMedicine from "../../../public/expired.png";
 import { BsArrowUpShort } from "react-icons/bs";
 
 const Statistics = () => {
+  
   return (
     <div className="text-[#424e79]">
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4">
