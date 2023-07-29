@@ -1,41 +1,41 @@
 const data = [
   {
     type: "Total Sales",
-    amount: 2230,
+    amount: 2930,
   },
   {
     type: "Total Purchase",
-    amount: 322,
+    amount: 1232,
   },
   {
     type: "Cash Received",
-    amount: 32133.23,
+    amount: 1789.50,
   },
   {
     type: "Bank Received",
-    amount: 0,
+    amount: 50,
   },
   {
     type: "E-Banking",
-    amount: 500,
+    amount: 510,
   },
   {
     type: "Mobile-Banking",
-    amount: 0,
+    amount: 70,
   },
   {
     type: "Others",
-    amount: 500,
+    amount: 7498,
   },
   {
     type: "Total Service",
-    amount: 0,
+    amount: 754,
   },
 ];
 
 const Summary = () => {
   return (
-    <div className="p-4 bg-white  mt-4 rounded-lg border-b-4">
+    <div className="p-4 bg-white  mt-4 rounded-lg border-b-4 text-[#424e79]">
       <h1 className="mb-4 font-bold">Summary</h1>
       <hr className="mb-7" />
       <div className="border">

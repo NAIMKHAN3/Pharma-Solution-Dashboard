@@ -6,7 +6,7 @@ import Summary from "../../Components/Summary/Summary";
 
 const DashboardHome = () => {
   return (
-    <div className="p-4 bg-primary">
+    <div className="p-4 bg-[#ecf0f4]">
       <Statistics />
       <div className="grid lg:grid-cols-2 gap-4">
         <PieCharts />

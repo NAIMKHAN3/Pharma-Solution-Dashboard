@@ -2,16 +2,16 @@ import { Cell, Pie, PieChart, Tooltip } from "recharts";
 import bgmap from "../../../public/bgmap.png"
 
 const data = [
-  { name: "Weekly Sell", value: 500 },
-  { name: "Monthly Sell", value: 700 },
-  { name: "Today Sell", value: 800 },
+  { name: "Weekly Sell", value: 1200 },
+  { name: "Monthly Sell", value: 1500 },
+  { name: "Today Sell", value: 900 },
 ];
 const COLORS = ["#FF8A8A", "#6554C0", "#45B854"];
 
 const PieCharts = () => {
   return (
     <div
-      className="p-4 bg-white mt-4 w-full rounded-lg"
+      className="p-4 bg-white mt-4 w-full rounded-lg text-[#424e79]"
       style={{
         backgroundImage: `url(${bgmap})`,
         backgroundSize: "cover",
@@ -44,15 +44,15 @@ const PieCharts = () => {
       <div className="flex justify-between text-sm">
         <h1 className="flex items-baseline">
           <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-          today
+          Today
         </h1>
         <h1 className="flex items-baseline">
           <div className="w-2 h-2 bg-blue-800 rounded-full mr-2"></div>
-          weekly
+          Weekly
         </h1>
         <h1 className="flex items-baseline">
           <div className="w-2 h-2 bg-pink-400 rounded-full mr-2"></div>
-          monthly
+          Monthly
         </h1>
       </div>
     </div>

@@ -10,46 +10,46 @@ import {
 
 const data = [
   {
-    name: "Panadol demo",
-    pv: 240,
-  },
-  {
     name: "Napa",
-    pv: 139,
+    pv: 189,
   },
   {
-    name: "Antiva",
-    pv: 90,
-  },
-  {
-    name: "Zinc",
-    pv: 390,
-  },
-  {
-    name: "Lumertam",
-    pv: 102,
-  },
-  {
-    name: "Entacyd",
-    pv: 280,
-  },
-  {
-    name: "Rupa",
-    pv: 380,
-  },
-  {
-    name: "Panadol",
+    name: "Panadol demo",
     pv: 180,
   },
   {
+    name: "Zinc",
+    pv: 410,
+  },
+  {
+    name: "Antiva",
+    pv: 840,
+  },
+  {
+    name: "Entacyd",
+    pv: 210,
+  },
+  {
+    name: "Lumertam",
+    pv: 1084,
+  },
+  {
+    name: "Rupa",
+    pv: 859,
+  },
+  {
+    name: "Panadol",
+    pv: 410,
+  },
+  {
     name: "Mylam",
-    pv: 600,
+    pv: 100,
   },
 ];
 
 const AreaCharts = () => {
   return (
-    <div className="p-4 bg-white mt-4 w-full rounded-lg overflow-auto">
+    <div className="p-4 bg-white mt-4 w-full rounded-lg overflow-auto text-[#424e79]">
       <h1 className="font-bold">Best Sales Of The Month</h1>
       <hr className="mb-7 mt-2" />
       <ResponsiveContainer width="100%" height={300}>

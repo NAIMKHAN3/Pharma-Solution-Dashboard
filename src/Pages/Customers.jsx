@@ -19,7 +19,7 @@ const Customers = () => {
     }
 
     return (
-        <div className=' bg-white p-5 m-5 rounded-xl overflow-scroll'>
+        <div className=' bg-white p-5 m-5 rounded-xl overflow-scroll text-[#424e79]'>
             <table class="table-auto ">
                 <thead>
                     <tr>

@@ -16,7 +16,7 @@ const Header = ({handleClick}) => {
         </div>
         <div className="flex items-center">
           <div className="border-r-2 mr-3 pr-5">
-            <img src="../../public/4563457.png" alt="" />
+            <img src="../../public/notification.png" alt="" />
           </div>
           <div className="flex items-center justify-between">
             <img src="../../public/9230.png" alt="" />

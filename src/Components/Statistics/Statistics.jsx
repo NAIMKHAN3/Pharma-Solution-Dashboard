@@ -6,13 +6,13 @@ import { BsArrowUpShort } from "react-icons/bs";
 
 const Statistics = () => {
   return (
-    <div>
+    <div className="text-[#424e79]">
       <div className=" grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-white p-3 rounded-lg flex justify-between">
           <div>
             <h1 className="text-xs">Total customer</h1>
             <h1 className="text-2xl font-bold">45</h1>
-            <button className="text-xs flex items-center text-blue">
+            <button className="text-xs flex items-center text-[#6554c0]">
               <BsArrowUpShort />
               Show details
             </button>
@@ -25,7 +25,7 @@ const Statistics = () => {
           <div>
             <h1 className="text-xs">Total Medicine</h1>
             <h1 className="text-2xl font-bold">751</h1>
-            <button className="text-xs flex items-center text-lightPink">
+            <button className="text-xs flex items-center text-[#ff8a8a] ">
               <BsArrowUpShort />
               Show details
             </button>
@@ -38,7 +38,7 @@ const Statistics = () => {
           <div>
             <h1 className="text-xs">Out Of Stock</h1>
             <h1 className="text-2xl font-bold">715</h1>
-            <button className="text-xs flex items-center text-orange">
+            <button className="text-xs flex items-center text-[#ffa958]">
               <BsArrowUpShort />
               Show details
             </button>
@@ -51,7 +51,7 @@ const Statistics = () => {
           <div>
             <h1 className="text-xs">Expired Medicine</h1>
             <h1 className="text-2xl font-bold">33</h1>
-            <button className="text-xs flex items-center text-green">
+            <button className="text-xs flex items-center text-[#45b854]">
               <BsArrowUpShort />
               Show details
             </button>

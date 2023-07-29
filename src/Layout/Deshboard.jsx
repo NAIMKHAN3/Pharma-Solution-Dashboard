@@ -16,7 +16,7 @@ const Deshboard = () => {
   }
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex">
         
           <Slider menuState={menuState} />
           
@@ -24,11 +24,12 @@ const Deshboard = () => {
           
           
         
-        <div className={`w-full duration-300 bg-[#ECF0F3] min-h-screen`}>
+        <div className={`w-full duration-300 bg-[#ecf0f4]`}>
          <Header handleClick={handleClick}/>
           <Outlet />
         </div>
       </div>
+      <h1 className="text-center py-2 text-[#424e79]">Copyright@2022 Bangladesh Design With by Kamrul Islam</h1>
     </div>
   );
 };

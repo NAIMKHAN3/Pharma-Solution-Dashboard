@@ -107,7 +107,7 @@ const BarCharts = () => {
     setActiveButton(button);
   };
   return (
-    <div className="p-4 bg-white mt-4 w-full rounded-lg">
+    <div className="p-4 bg-white mt-4 w-full rounded-lg text-[#424e79]">
       <div className="flex justify-between mb-3">
         <h1 className="font-bold">Monthly Progress Report</h1>
         <div className="flex">
@@ -115,7 +115,7 @@ const BarCharts = () => {
             className={`mr-1 ${
               activeButton === "Purchase"
                 ? "bg-[#64C8BC] text-white"
-                : "bg-secondary"
+                : "bg-[#ecf0f4] text-gray-800"
             }  px-4 py-1 rounded-lg`}
             onClick={() => handleButtonClick("Purchase")}
           >
@@ -125,7 +125,7 @@ const BarCharts = () => {
             className={`${
               activeButton === "Sales"
                 ? "bg-[#64C8BC] text-white"
-                : "bg-primary text-white"
+                : "bg-[#ecf0f4] text-gray-800"
             }  px-8 py-1 rounded-lg`}
             onClick={() => handleButtonClick("Sales")}
           >

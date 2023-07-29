@@ -1,5 +1,7 @@
 import React from 'react';
 import { ImCross } from "react-icons/im"
+import { IoIosArrowForward } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 const MobileSlider = ({ isCollups, setIsCollups, menuState, setMenuState }) => {
     const handleClick = ()=>{
@@ -8,7 +10,7 @@ const MobileSlider = ({ isCollups, setIsCollups, menuState, setMenuState }) => {
         setM
     }
     return (
-        <div className={`${!isCollups ? "left-0" : "left-[-200px]"} absolute top-0 left-0 block lg:hidden duration-300 bg-white h-screen rounded-md text-secondary`}>
+        <div className={`${!isCollups ? "left-0" : "left-[-200px]"} absolute top-0 left-0 block lg:hidden duration-300 bg-white rounded-md text-secondary`}>
             <ul className="flex flex-col h-full">
                 <li className={`font-semibold px-3 mt-4 flex justify-between items-center`}>
                     <img className='w-28' src="../../public/Group 19.png" alt="" />
@@ -27,15 +29,28 @@ const MobileSlider = ({ isCollups, setIsCollups, menuState, setMenuState }) => {
                     </div>
                 </li>
                 <hr className={`mt-2 mb-2 ${!isCollups && "hidden"}`} />
-                <li className="mt-4 flex items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
-                    <img className="mr-2" src="../../public/45345.png" alt="" />
-                    <span>Dashboard</span>
-
-                </li>
-                <li className="mt-2 flex items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
-                    <img className="mr-2" src="../../public/33308.png" alt="" />
-                    <span>Customer</span>
-                </li>
+                <Link to='/dashboard'>
+          <li className="mt-4 flex justify-between items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
+            <div className="flex items-center">
+              <img className="mr-2" src="../../public/45345.png" alt="" />
+              {
+                !isCollups && <span>Dashboard</span>
+              }
+            </div>
+            <IoIosArrowForward />
+          </li>
+        </Link>
+        <Link to='/customers'>
+          <li className="mt-2 flex justify-between items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
+            <div className="flex items-center">
+              <img className="mr-2" src="../../public/33308.png" alt="" />
+              {
+                !isCollups && <span>Customer</span>
+              }
+            </div>
+            <IoIosArrowForward />
+          </li>
+        </Link>
                 <li className="mt-2 flex items-center hover:shadow-md cursor-pointer rounded px-2 py-1 mx-2">
                     <img className="mr-2" src="../../public/3633274.png" alt="" />
                     <span>Supplier</span>
